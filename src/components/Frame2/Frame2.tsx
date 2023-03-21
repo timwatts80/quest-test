@@ -23,7 +23,7 @@ const Frame21: any = styled('div')({
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `column`,
-  width: 'fit-content',
+  width: '100%',
   justifyContent: `center`,
   alignItems: `center`,
   padding: `32px 24px`,
@@ -48,7 +48,7 @@ const LoremIpsumDolorSitAm: any = styled('div')({
 });
 
 const Rectangle5: any = styled('div')({
-  backgroundColor: `rgba(72, 115, 226, 1)`,
+  backgroundColor: `rgba(226, 72, 72, 1)`,
   borderRadius: `8px`,
   alignSelf: `stretch`,
   height: `140px`,
