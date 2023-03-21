@@ -13,14 +13,17 @@
  *
  **********************************************************************/
 
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
 
+
 export interface SampleCardGridProps {
   className?: any;
 }
+
 
 export interface Frame2Props {
   className?: any;

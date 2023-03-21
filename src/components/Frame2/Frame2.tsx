@@ -23,7 +23,7 @@ const Frame21: any = styled('div')({
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `column`,
-  width: '100%',
+  width: 'fit-content',
   justifyContent: `center`,
   alignItems: `center`,
   padding: `32px 24px`,
