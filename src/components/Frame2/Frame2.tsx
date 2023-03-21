@@ -13,23 +13,26 @@
  **********************************************************************/
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { styled } from '@mui/material/styles';
 import { Frame2Props } from 'src/types';
+import { animated, useSpring, easings } from 'react-spring';
 
-const Frame21: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  width: '100%',
-  justifyContent: `center`,
-  alignItems: `center`,
-  padding: `32px 24px`,
-  boxSizing: `border-box`,
-  height: 'auto',
-});
+const Frame21: any = animated(
+  styled('div')({
+    backgroundColor: `rgba(255, 255, 255, 1)`,
+    display: `flex`,
+    position: `relative`,
+    isolation: `isolate`,
+    flexDirection: `column`,
+    width: '100%',
+    justifyContent: `center`,
+    alignItems: `center`,
+    padding: `32px 24px`,
+    boxSizing: `border-box`,
+    height: 'auto',
+    maxWidth: '300px',
+  })
+);
 
 const LoremIpsumDolorSitAm: any = styled('div')({
   textAlign: `center`,
@@ -104,11 +107,25 @@ const ClickMe: any = styled('div')({
 });
 
 function Frame2(props: Frame2Props): JSX.Element {
+  const [Frame21Spring, Frame21Api] = useSpring(() => ({
+    config: {
+      duration: 250,
+      easing: easings['easeInOutExpo'],
+    },
+    delay: 0,
+    from: { opacity: 1 },
+  }));
   return (
-    <Frame21 className={props.className}>
-      <Helmet>
-        <title>Frame 2</title>
-      </Helmet>
+    <Frame21
+      onMouseLeave={() => {
+        Frame21Api.start({ opacity: 1 });
+      }}
+      onMouseEnter={() => {
+        Frame21Api.start({ ...{ opacity: 0.5 }, delay: 0 });
+      }}
+      className={props.className}
+      style={{ ...Frame21Spring }}
+    >
       <LoremIpsumDolorSitAm>
         {`Lorem ipsum dolor sit amet consectetur.`}
       </LoremIpsumDolorSitAm>

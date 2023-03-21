@@ -15,10 +15,17 @@
 
 
 
+
+export interface Frame2Props {
+  className?: any;
+}
+
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
+
 
 
 
@@ -27,7 +34,3 @@ export interface SampleCardGridProps {
 }
 
 
-
-export interface Frame2Props {
-  className?: any;
-}
