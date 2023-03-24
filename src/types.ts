@@ -14,10 +14,12 @@
  **********************************************************************/
 
 
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
+
 
 
 export interface SampleCardGridProps {
@@ -25,9 +27,11 @@ export interface SampleCardGridProps {
 }
 
 
+
 export interface Frame2Props {
   className?: any;
 }
+
 
 
 export interface AmlRootProps {
@@ -35,9 +39,11 @@ export interface AmlRootProps {
 }
 
 
+
 export interface AltProBrowserTemplate1Props {
   className?: any;
 }
+
 
 
 export interface SearchProps {
@@ -45,9 +51,11 @@ export interface SearchProps {
 }
 
 
+
 export interface BackProps {
   className?: any;
 }
+
 
 
 export interface UploadProps {
@@ -55,9 +63,11 @@ export interface UploadProps {
 }
 
 
+
 export interface HelpProps {
   className?: any;
 }
+
 
 
 export interface SubNavSideProps {
@@ -65,9 +75,11 @@ export interface SubNavSideProps {
 }
 
 
+
 export interface CheckBoxCircleProps {
   className?: any;
 }
+
 
 
 export interface H4Props {
@@ -75,9 +87,11 @@ export interface H4Props {
 }
 
 
+
 export interface Body75RemProps {
   className?: any;
 }
+
 
 
 export interface BreadcrumbProps {
@@ -85,9 +99,11 @@ export interface BreadcrumbProps {
 }
 
 
+
 export interface InvestorInfoEntityProps {
   className?: any;
 }
+
 
 
 export interface EntityTypeProps {
@@ -95,9 +111,11 @@ export interface EntityTypeProps {
 }
 
 
+
 export interface SelectFieldProps {
   className?: any;
 }
+
 
 
 export interface MenuDownProps {
@@ -105,9 +123,11 @@ export interface MenuDownProps {
 }
 
 
+
 export interface AccountNameProps {
   className?: any;
 }
+
 
 
 export interface InputFieldProps {
@@ -115,9 +135,11 @@ export interface InputFieldProps {
 }
 
 
+
 export interface TaxIdTypeProps {
   className?: any;
 }
+
 
 
 export interface IdNumberProps {
@@ -125,9 +147,11 @@ export interface IdNumberProps {
 }
 
 
+
 export interface ForeignInvestorProps {
   className?: any;
 }
+
 
 
 export interface AccreditationProps {
@@ -135,9 +159,11 @@ export interface AccreditationProps {
 }
 
 
+
 export interface AmlMenuInvestorProps {
   className?: any;
 }
+
 
 
 export interface MenuItemProps {
