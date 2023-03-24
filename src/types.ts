@@ -14,9 +14,35 @@
  **********************************************************************/
 
 
+
+
+export interface SubNavProps {
+  className?: any;
+};
+
+
+
+
+export interface CheckBoxCircleProps {
+  className?: any;
+}
+
+
+export interface H4Props {
+  className?: any;
+}
+
+
+export interface Body75RemProps {
+  className?: any;
+}
+
+
 export interface MenuItemProps {
   className?: any;
 };
+
+
 
 
 
@@ -26,9 +52,13 @@ export interface SampleCardProps {
 }
 
 
+
+
 export interface SampleCardGridProps {
   className?: any;
 }
+
+
 
 
 export interface Frame2Props {
