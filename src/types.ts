@@ -20,6 +20,7 @@
 
 
 
+
 export interface Card2Props {
   className?: any;
   hotel: any;
@@ -28,9 +29,11 @@ export interface Card2Props {
 
 
 
+
 export interface SubNavProps {
   className?: any;
 };
+
 
 
 
@@ -48,9 +51,11 @@ export interface CheckBoxCircleProps {
 
 
 
+
 export interface H4Props {
   className?: any;
 }
+
 
 
 
@@ -72,6 +77,9 @@ export interface Body75RemProps {
 
 
 
+
+
+
 export interface SubNavSideProps {
   className?: any;
 }
@@ -79,6 +87,7 @@ export interface SubNavSideProps {
 export interface SubNavSideProps {
   className?: any;
 }
+
 
 
 
@@ -86,6 +95,7 @@ export interface SubNavSideProps {
 export interface MenuItemProps {
   className?: any;
 };
+
 
 
 
@@ -107,9 +117,11 @@ export interface SampleCardProps {
 
 
 
+
 export interface SampleCardGridProps {
   className?: any;
 }
+
 
 
 
