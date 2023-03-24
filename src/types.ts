@@ -14,9 +14,17 @@
  **********************************************************************/
 
 
+
+export interface SubNavProps {
+  className?: any;
+};
+
+
+
 export interface MenuItemProps {
   className?: any;
 };
+
 
 
 
@@ -26,9 +34,11 @@ export interface SampleCardProps {
 }
 
 
+
 export interface SampleCardGridProps {
   className?: any;
 }
+
 
 
 export interface Frame2Props {
