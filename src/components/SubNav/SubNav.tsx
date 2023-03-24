@@ -13,6 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { styled } from '@mui/material/styles';
 import CheckBoxCircle from 'src/components/CheckBoxCircle/CheckBoxCircle';
 import H4 from 'src/components/H4/H4';
@@ -77,6 +78,9 @@ const Body75Rem1: any = styled(Body75Rem)(({ theme }: any) => ({
 function SubNav(props: SubNavProps): JSX.Element {
   return (
     <SubNav1 className={props.className}>
+      <Helmet>
+        <title>sub_nav</title>
+      </Helmet>
       <Frame195>
         <CheckBoxCircle1 />
         <H41 />
