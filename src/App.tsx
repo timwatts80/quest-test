@@ -10,7 +10,7 @@ function App() {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={questTheme}>
         <Routes>
-          <Route path="/" element={<SubNavSide />} />
+          <Route path="sub_nav" element={<SubNav />} />
         </Routes>
       </ThemeProvider>
     </StyledEngineProvider>
