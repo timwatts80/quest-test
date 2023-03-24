@@ -16,7 +16,6 @@ import React from 'react';
 import { Button } from '@mui/material';
 import StarImage from 'src/assets/images/Card2_star.png';
 import { styled } from '@mui/material/styles';
-import Image1Image from 'src/assets/images/Card2_Image.png';
 import { Card2Props } from 'src/types';
 import useCard2 from 'src/components/Card2/useCard2';
 
@@ -37,8 +36,9 @@ const TypeQuest: any = styled('div')(({ theme }: any) => ({
   height: 'auto',
 }));
 
-const Image1: any = styled('div')({
-  backgroundImage: `url(${Image1Image})`,
+const Image1: any = styled('div', {
+  shouldForwardProp: (prop: any) => !['props'].includes(prop.toString()),
+})(({ props }: any) => ({
   backgroundPosition: `center`,
   backgroundSize: `cover`,
   backgroundRepeat: `no-repeat`,
@@ -52,7 +52,8 @@ const Image1: any = styled('div')({
   height: `287px`,
   margin: `0px`,
   overflow: `hidden`,
-});
+  backgroundImage: props.hotel.image,
+}));
 
 const Content: any = styled('div')({
   display: `flex`,
@@ -288,7 +289,7 @@ function Card2(props: Card2Props): JSX.Element {
 
   return (
     <TypeQuest className={props.className}>
-      <Image1></Image1>
+      <Image1 props={props}></Image1>
       <Content>
         <Content1>
           <About>
